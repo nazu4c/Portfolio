@@ -1,0 +1,103 @@
+body {
+background: #0a3d62;
+display: flex;
+flex-direction: column;
+overflow-x: hidden;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 100px 80px;
+}
+
+.competences {
+  background-color: #1e3799;
+  color: #82ccdd;
+  padding: 30px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  font-family: 'Montserrat', sans-serif;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+}
+
+.competences h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.skill i {
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.skill i.fa-html5 { color: #e34c26; }
+.skill i.fa-css3-alt { color: #264de4; }
+.skill i.fa-js-square { color: #f0db4f; }
+.skill i.fa-node-js { color: #68a063; }
+.skill i.fa-robot { color: #7289da; }
+
+.skill:hover {
+  transform: translateX(5px);
+  transition: 0.2s ease;
+}
+
+.carte-retour {
+  display: inline-block;
+  background-color: #2e3a8c;
+  color: #a8e0ff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+  width: 200px;
+}
+
+.carte-retour:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .competences {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .carte-retour {
+    width: auto;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+  }
+}
