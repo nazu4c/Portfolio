@@ -402,7 +402,104 @@ a {
   }
 }
 
-/* ✅ Responsive Design */
+/* toggle light and dark... */
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 24px;
+  background: #1e3799;
+  color: #82ccdd;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.4);
+  transition: background 0.3s, transform 0.2s;
+}
+#theme-toggle:hover {
+  background: #6a89cc;
+  transform: scale(1.05);
+}
+
+
+body.light-mode {
+  background: #e55039; /* Fond principal */
+  color: #ffffff;
+}
+
+.light-mode .qualite,
+.light-mode .bio,
+.light-mode .button,
+.light-mode .competences,
+.light-mode .contact-box,
+.light-mode .pfd span,
+.light-mode .vertical-line {
+  background-color: #e55039 !important;
+  color: #e55039 !important;
+  border-color: #e55039;
+}
+
+.light-mode .qualite:hover,
+.light-mode .button:hover {
+  background-color: #fa7e65 !important;
+  color: white;
+  transform: scale(1.1);
+}
+
+.light-mode .exit-fullscreen::before,
+.light-mode .exit-fullscreen::after {
+  background-color: #e55039;
+}
+
+.light-mode .top h1,
+.light-mode .top h2,
+.light-mode .top p,
+.light-mode .contact-box,
+.light-mode .contact-section strong,
+.light-mode .contact-section span,
+.light-mode a {
+  color: white !important;
+}
+
+.light-mode #theme-toggle {
+  background-color: white;
+  color: #e55039;
+  border: 1px solid #e55039;
+}
+
+.light-mode #theme-toggle:hover {
+  background-color: #fa7e65;
+  color: white;
+}
+
+/* easter egg  / konami code */
+@keyframes glitch {
+  0% { transform: skew(0deg); }
+  20% { transform: skew(5deg); }
+  40% { transform: skew(-5deg); }
+  60% { transform: translateX(5px); }
+  80% { transform: translateX(-5px); }
+  100% { transform: skew(0deg); }
+}
+
+.glitch {
+  animation: glitch 0.2s infinite;
+  color: red !important;
+  text-shadow: 2px 0 blue, -2px 0 lime;
+  background: black !important;
+}
+
+.glitch-intense {
+  animation: glitch 0.1s infinite;
+  filter: invert(1) hue-rotate(90deg) contrast(2);
+  transform: scale(1.05) rotate(1deg);
+}
+
+
+
+/* téléphone */
 @media (max-width: 768px) {
   .main {
     flex-direction: column;
@@ -462,3 +559,4 @@ a {
     margin: 0 auto;
   }
 }
+

@@ -87,6 +87,8 @@ html, body {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
 
+
+/* téléphone */
 @media (max-width: 768px) {
   .competences {
     width: 90%;
@@ -101,3 +103,4 @@ html, body {
     display: block;
   }
 }
+
