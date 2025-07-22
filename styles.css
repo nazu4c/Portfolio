@@ -502,7 +502,6 @@ body.light-mode {
   animation: glitch 0.2s infinite;
   color: red !important;
   text-shadow: 2px 0 blue, -2px 0 lime;
-  background: black !important;
 }
 
 .glitch-intense {
