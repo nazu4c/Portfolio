@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   typeWriter();
 });
 
+
 document.addEventListener("DOMContentLoaded", function () {
   const bioElement = document.querySelector('.bio');
   const exitBtn = document.querySelector('.exit-fullscreen');
@@ -66,6 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver((entries, observer) => {
@@ -123,13 +125,11 @@ function triggerGlitch(level) {
   }
 }
 
-
 setInterval(() => {
   if (glitchActive) {
     document.body.classList.add("glitch");
   }
 }, 1000);
-
 
 function triggerGlitch(level) {
   const body = document.body;

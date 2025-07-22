@@ -45,6 +45,7 @@ html, body {
   }
 }
 
+
 /* Carées 3D */
 .ploader {
   margin: 12%;
@@ -170,6 +171,7 @@ html, body {
   left: -10px;
 }
 
+
 /* bienvenue... */
 .top h1 {
   font-family: 'Montserrat', sans-serif;
@@ -211,6 +213,7 @@ html, body {
   50% { opacity: 0; }
 }
 
+
 /* tout en bas */
 .contact-box {
   display: flex;
@@ -242,6 +245,7 @@ html, body {
   background-color: #82ccdd;
 }
 
+
 /* tableau qualité */
 .qualite {
   background-color: #1e3799;
@@ -267,6 +271,7 @@ html, body {
   list-style-type: disc;
   padding-left: 20px;
 }
+
 
 /* button projet */
 .button {
@@ -295,6 +300,7 @@ a {
   text-decoration: none;
   color: #82ccdd;
 }
+
 
 /* tableau bio */
 .bio {
@@ -402,6 +408,7 @@ a {
   }
 }
 
+
 /* toggle light and dark... */
 #theme-toggle {
   position: fixed;
@@ -488,6 +495,7 @@ body.light-mode {
   color: white;
 }
 
+
 /* easter egg  / konami code */
 @keyframes glitch {
   0% { transform: skew(0deg); }
@@ -509,7 +517,6 @@ body.light-mode {
   filter: invert(1) hue-rotate(90deg) contrast(2);
   transform: scale(1.05) rotate(1deg);
 }
-
 
 
 /* téléphone */
