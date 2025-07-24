@@ -445,8 +445,7 @@ body.light-mode {
 
 
 .light-mode .competences,
-.light-mode .contact-box,
-.light-mode .pfd span {
+.light-mode .contact-box {
   background-color: #2d3436 !important;
   color: #2d3436 !important;
   border-color: #2d3436;
@@ -495,7 +494,8 @@ body.light-mode {
   color: white;
 }
 
-.light-mode .pfd {
+.light-mode .pfd
+.light-mode .pfd span {
   background-color: transparent !important;
 }
 
