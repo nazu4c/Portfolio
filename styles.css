@@ -614,6 +614,7 @@ body.light-mode {
     height: auto;
     margin-top: 100px;
     padding: 20px;
+    overflow-x: scroll;
   }
 
   .contact-box {
