@@ -198,3 +198,14 @@ window.addEventListener('load', () => {
     }, remainingTime);
   });
 });
+
+const CODE_SECRET = "2009";
+
+function verifierCode() {
+  const saisie = document.getElementById("codeSecret").value.trim();
+  if (saisie === CODE_SECRET) {
+    document.getElementById("infosCachees").style.display = "block";
+  } else {
+    alert("Code incorrect. Essaie encore !");
+  }
+}

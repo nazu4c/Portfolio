@@ -588,6 +588,62 @@ body.light-mode {
   background: white;
 }
 
+
+/* info+ */
+.codeinfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  align-items: center;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.indice {
+  font-family: 'Monserrat', sans-serif;
+  font-style: italic;
+  font-size: 10px;
+}
+
+input[type="password"] {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0c2461;
+  color: #82ccdd;
+  text-align: center;
+  width: 120px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+input[type="password"]::placeholder {
+  color: #82ccdd;  
+}
+
+.btn-secret {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #82ccdd;
+  color: #1e3799;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#infosCachees {
+  display: none;
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #82ccdd;
+  background-color: #0c2461;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif; 
+}
+
+
 /* téléphone */
 @media (max-width: 768px) {
   .main {
