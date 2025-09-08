@@ -191,3 +191,18 @@ html, body {
   }
 }
 
+/* PC portable (1024px à 1600px) */
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+    .competences {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .carte-retour {
+    width: auto;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+  }
+}
