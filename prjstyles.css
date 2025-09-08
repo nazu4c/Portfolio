@@ -109,6 +109,8 @@ html, body {
   max-height: 475px;
 }
 
+
+/* button voir temps réel*/
 .bu {
   background-color: #1e3799;
   color: #82ccdd;
@@ -132,12 +134,14 @@ html, body {
   opacity: 1;
 }
 
+
 .card-container {
   display: flex;
   gap: 20px;
   align-items: flex-start;
   flex-wrap: wrap;
 }
+
 
 .cnav {
   background-color: #1e3799;

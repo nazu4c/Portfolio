@@ -208,3 +208,67 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+
+#loading-screen {
+  position: fixed;
+  inset: 0;
+  background: #222f3e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: all 0.6s ease-in-out;
+}
+
+.loading-content {
+  text-align: center;
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.6s ease-in-out;
+}
+
+.loading-text {
+  font-size: 2rem;
+  color: #82ccdd;
+  margin-bottom: 20px;
+  animation: fadeIn 1s forwards;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600px;
+}
+
+.dot.flash {
+  animation: blink 1s infinite;
+}
+
+.dot.flash:nth-of-type(2) { animation-delay: 0.2s; }
+.dot.flash:nth-of-type(3) { animation-delay: 0.6s; }
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #333;
+  border-top: 6px solid #82ccdd;
+  border-radius: 50%;
+  margin: 0 auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#main-content {
+  display: none;
+  padding: 2rem;
+  background: white;
+}
