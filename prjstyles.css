@@ -109,6 +109,23 @@ html, body {
   max-height: 475px;
 }
 
+.bu {
+  background-color: #1e3799;
+  color: #82ccdd;
+  margin-top: 2px;
+  padding: 8px;
+  width: 170px;
+  border-radius: 18px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bu a {
+  font-family: 'Montserrat', sans-serif;
+  color: #82ccdd;
+  text-decoration: none;
+}
+
 .card-container {
   display: flex;
   gap: 20px;
