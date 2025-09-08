@@ -118,12 +118,18 @@ html, body {
   border-radius: 18px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   font-family: 'Montserrat', sans-serif;
+  display: none;
 }
 
 .bu a {
   font-family: 'Montserrat', sans-serif;
   color: #82ccdd;
   text-decoration: none;
+}
+
+.scrlg:hover .bu {
+  display: inline-block;
+  opacity: 1;
 }
 
 .card-container {
@@ -158,6 +164,11 @@ html, body {
 .cnav img {
   max-width: 575px;
   max-height: 500px;
+}
+
+.cnav:hover .bu {
+  display: inline-block;
+  opacity: 1;
 }
 
 /* téléphone */
