@@ -112,7 +112,7 @@ html, body {
 
 /* button voir temps réel*/
 .bu {
-  background-color: #1e3799;
+  background-color: linear-gradient(112.78422416304966deg, rgba(86, 216, 228,1) 19.92703891257996%,rgba(159, 1, 234,1) 94.16655561478323%);
   color: #82ccdd;
   margin-top: 2px;
   padding: 8px;
@@ -205,4 +205,5 @@ html, body {
     margin: 20px auto;
     display: block;
   }
+
 }
