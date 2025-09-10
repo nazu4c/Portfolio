@@ -59,11 +59,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (document.fullscreenElement === bioElement) {
       exitBtn.style.display = 'block';
       bioParagraph.style.display = 'block';
-      if (clbImage) clbImage.style.display = 'none'; // Hide image
+      if (clbImage) clbImage.style.display = 'none';
     } else {
       exitBtn.style.display = 'none';
       bioParagraph.style.display = 'none';
-      if (clbImage) clbImage.style.display = 'block'; // Show image
+      if (clbImage) clbImage.style.display = 'block';
     }
   });
 });
