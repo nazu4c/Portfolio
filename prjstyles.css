@@ -172,3 +172,8 @@ html, body {
     margin-left: 0;
   }
 }
+
+.scrlg img, .cnav img {
+  max-width: 575px;
+  max-height: 475px;
+}

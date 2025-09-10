@@ -255,12 +255,26 @@ html, body {
   border-radius: 8px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   font-family: 'Montserrat', sans-serif;
-  transition: transform 0.3s, background-color 0.3s ease;
+  overflow: hidden;
+  position: relative;
 }
 
-.qualite:hover {
-  background-color: #6a89cc;
-  transform: scale(1.2);
+.qualite::before {
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #6a89cc;
+    transition: 0.5s, top 0s, left 0s;
+}
+
+.qualite:hover::before {
+    width: 900px;
+    height: 900px;
 }
 
 .qualite h1 {
@@ -461,11 +475,14 @@ body.light-mode {
   border-color: white !important;
 }
 
-.light-mode .qualite:hover,
 .light-mode .button:hover {
   background-color: #b2bec3 !important;
   color: white;
   transform: scale(1.1);
+}
+
+.light-mode .qualite::before {
+    background: #b2bec3 !important;
 }
 
 .light-mode .exit-fullscreen::before,

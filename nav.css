@@ -20,6 +20,22 @@ body{
     background: var(--clr);
 }
 
+.carte-retour {
+  display: inline-block;
+  background-color: #2e3a8c;
+  color: #a8e0ff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+  width: 225px;
+}
+
 .navigation{
     width: 400px;
     height: 70px;
