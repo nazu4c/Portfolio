@@ -25,33 +25,72 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-/** exemple particle
-let bix = document.getElementById('bix');
-bix.addEventListener('mousemove', function(e) {
-  let rect = bix.getBoundingClientRect();
-  let x = e.clientX - rect.left;
-  let y = e.clientY - rect.top;
-  let numParticles = 20;
-  for (let i = 0; i < numParticles; i++) {
-    createParticle(x,y);
-  }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".card-3d");
+
+  cards.forEach(card => {
+    card.addEventListener("mouseenter", () => {
+
+      const interval = setInterval(() => {
+        releaseSmokeFromCard(card);
+      }, 150);
+
+
+      card.addEventListener("mouseleave", () => {
+        clearInterval(interval);
+      }, { once: true });
+    });
+  });
 });
-function createParticle(x,y) {
-  let particle = document.createElement('div');
-  particle.classList.add('particle');
-  particle.style.left = x + 'px';
-  particle.style.top = y + 'px';
-  let angle = Math.random() * 80 + 20;
-  let tx = Math.cos(angle) * distance;
-  let ty = Math.sin(angle) * distance;
 
-  particle.style.setProperty('--tx', tx + 'px');
-  particle.style.setProperty('--ty', ty + 'px');
 
-  bix.appendChild(particle);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".card-3d");
+
+  cards.forEach(card => {
+    card.addEventListener("mouseenter", () => {
+      const interval = setInterval(() => {
+        releaseSmokeFromCard(card);
+      }, 200);
+
+      card.addEventListener("mouseleave", () => {
+        clearInterval(interval);
+      }, { once: true });
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  setInterval(() => {
+    createSmokeRandom();
+  }, 400);
+});
+
+function createSmokeRandom() {
+  const container = document.getElementById("particles-container");
+  const particle = document.createElement("div");
+  particle.classList.add("particle");
+
+
+  const x = Math.random() * window.innerWidth;
+  const y = window.innerHeight * 0.7 + Math.random() * (window.innerHeight * 0.3);
+
+  particle.style.left = x + "px";
+  particle.style.top = y + "px";
+
+
+  const distance = Math.random() * 200 + 150;
+  const tx = (Math.random() - 0.5) * 100;
+  const ty = -distance;
+
+  particle.style.setProperty("--tx", tx + "px");
+  particle.style.setProperty("--ty", ty + "px");
+
+  container.appendChild(particle);
 
   setTimeout(() => {
     particle.remove();
-  },1000)
+  }, 8000);
 }
-*/
