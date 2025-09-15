@@ -288,3 +288,54 @@ body{
   padding: 2rem;
   background: white;
 }
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    min-height: 600px;
+  }
+
+  .form-container,
+  .toggle-container,
+  .sign-in,
+  .sign-up,
+  .toggle {
+    width: 100%;
+    position: relative;
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+    z-index: auto !important;
+    height: auto;
+  }
+
+  .toggle-container {
+    display: none;
+  }
+
+  .container.active .sign-in,
+  .container.active .sign-up {
+    transform: translateX(0);
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  .container form {
+    padding: 20px;
+  }
+}
+
+  .carte-retour {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}

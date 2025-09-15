@@ -201,11 +201,24 @@ html, body {
 
   .scrlg, .cnav {
     width: 90%;
+    height: 30%;
     margin-left: 0;
   }
 }
 
 .scrlg img, .cnav img {
-  max-width: 575px;
-  max-height: 475px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
