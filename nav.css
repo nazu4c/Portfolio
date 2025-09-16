@@ -21,6 +21,7 @@ body{
 }
 
 .carte-retour {
+  position: relative;
   display: inline-block;
   background-color: #2e3a8c;
   color: #a8e0ff;
@@ -217,4 +218,63 @@ body{
   display: none;
   padding: 2rem;
   background: white;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .navigation {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-left: -30%;
+  }
+
+  .navigation ul {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navigation ul li {
+    width: 60px;
+    height: 60px;
+  }
+
+  .navigation ul li a .icon {
+    font-size: 1.3em;
+    line-height: 60px;
+  }
+
+  .navigation ul li a .text {
+    font-size: 0.7em;
+  }
+
+  .indicator {
+    width: 60px;
+    height: 60px;
+    top: -40%;
+    border-width: 5px;
+  }
+
+  .indicator::before,
+  .indicator::after {
+    display: none;
+  }
+
+  .carte-retour {
+    font-size: 0.95rem;
+    width: 90%;
+    max-width: none;
+    margin-top: -70%;
+    margin-right: -50%;
+  }
+}
+
+body {
+  overflow-x: hidden;
 }
