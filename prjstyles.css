@@ -69,8 +69,10 @@ html, body {
 .skill i.fa-html5 { color: #e34c26; }
 .skill i.fa-css3-alt { color: #264de4; }
 .skill i.fa-js-square { color: #f0db4f; }
-.skill i.fa-node-js { color: #68a063; }
+.skill i.fa-databases { color: #e0afff; }
+.skill i.fa-php { color: #787CB5; }
 .skill i.fa-robot { color: #7289da; }
+
 
 .skill:hover {
   transform: translateX(5px);
@@ -221,4 +223,5 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+
 }
