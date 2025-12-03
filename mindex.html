@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Météo API</title>
+  <link rel="stylesheet" href="mstyles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div id="loading-screen">
+  <div class="loading-content">
+    <p class="loading-text">
+      Chargement<span class="dot">.</span><span class="dot flash">.</span><span class="dot flash">.</span>
+    </p>
+    <div class="spinner"></div>
+  </div>
+</div>
+  <a href="/projet.html" class="carte-retour">← Retour au Portfolio</a>
+
+  <header>
+    <h1>Modélisation météorologique</h1>
+    <input type="text" id="cityInput" placeholder="Entrez une ville (ex: Paris)">
+    <button id="searchBtn">Rechercher</button>
+  </header>
+
+  <main>
+    <section class="current-weather">
+      <h2>Météo actuelle</h2>
+      <p id="weatherDesc"></p>
+      <p id="temp"></p>
+      <p id="wind"></p>
+    </section>
+
+    <section class="charts">
+      <h2>Prévisions horaires</h2>
+      <canvas id="tempChart"></canvas>
+      <canvas id="windChart"></canvas>
+      <canvas id="precipChart"></canvas>
+    </section>
+  </main>
+
+  <script src="mindex.js"></script>
+</body>
+</html>
