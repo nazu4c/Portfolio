@@ -59,11 +59,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (document.fullscreenElement === bioElement) {
       exitBtn.style.display = 'block';
       bioParagraph.style.display = 'block';
-      if (clbImage) clbImage.style.display = 'none';
+      if (clbImage) clbImage.style.display = 'none'; // Hide image
     } else {
       exitBtn.style.display = 'none';
       bioParagraph.style.display = 'none';
-      if (clbImage) clbImage.style.display = 'block';
+      if (clbImage) clbImage.style.display = 'block'; // Show image
     }
   });
 });
@@ -210,13 +210,16 @@ function verifierCode() {
   }
 }
 
-let box = document.querySelectorAll(".qualite");
-box.forEach(box => {
-    box.onmousemove = function(e) {
-        let x = e.pageX - box.offsetLeft;
-        let y = e.pageY - box.offsetTop;
+const isMobileDevice =
+  /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+const isSmallScreen = window.innerWidth < 768;
 
-        box.style.setProperty('--x', x+'px');
-        box.style.setProperty('--y', y+'px');
-    }
-})
+if (isMobileDevice || isSmallScreen) {
+  const warning = document.getElementById("mobile-warning");
+  warning.style.display = "flex";
+
+  document.getElementById("modal-close")
+    .addEventListener("click", () => {
+      warning.style.display = "none";
+    });
+}

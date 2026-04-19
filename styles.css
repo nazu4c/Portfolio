@@ -1,4 +1,3 @@
-
 body {
   background: #0a3d62;
   display: flex;
@@ -108,6 +107,73 @@ html, body {
 .loader:hover span {
   transform: rotateX(360deg);
 }
+
+
+/* warning pour mobile */
+#mobile-warning {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-box {
+  background: #222f3e;
+  border: 1.5px solid rgba(130, 204, 221, 0.27);
+  border-radius: 16px;
+  padding: 2rem 1.75rem;
+  width: min(300px, 88vw);
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.modal-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #1a252f;
+  border: 1.5px solid #82ccdd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 22px;
+  color: #82ccdd;
+  font-weight: bold;
+}
+
+.modal-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: #82ccdd;
+}
+
+.modal-body {
+  font-size: 14px;
+  color: rgba(130, 204, 221, 0.73);
+  margin: 0 0 1.5rem;
+  line-height: 1.6;
+}
+
+.modal-btn {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(130, 204, 221, 0.4);
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: #82ccdd;
+}
+
+.modal-btn:hover {
+  background: rgba(130, 204, 221, 0.08);
+}
+
 
 /* PORTFOLIO 3D */
 .pfd span {
@@ -256,26 +322,12 @@ html, body {
   border-radius: 8px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   font-family: 'Montserrat', sans-serif;
-  overflow: hidden;
-  position: relative;
+  transition: transform 0.3s, background-color 0.3s ease;
 }
 
-.qualite::before {
-    content: '';
-    position: absolute;
-    top: var(--y);
-    left: var(--x);
-    transform: translate(-50%, -50%);
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: #6a89cc;
-    transition: 0.5s, top 0s, left 0s;
-}
-
-.qualite:hover::before {
-    width: 900px;
-    height: 900px;
+.qualite:hover {
+  background-color: #6a89cc;
+  transform: scale(1.2);
 }
 
 .qualite h1 {
@@ -476,14 +528,11 @@ body.light-mode {
   border-color: white !important;
 }
 
+.light-mode .qualite:hover,
 .light-mode .button:hover {
   background-color: #b2bec3 !important;
   color: white;
   transform: scale(1.1);
-}
-
-.light-mode .qualite::before {
-    background: #b2bec3 !important;
 }
 
 .light-mode .exit-fullscreen::before,
