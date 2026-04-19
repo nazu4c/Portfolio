@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e9eef3;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cv {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 20px auto;
+  display: flex;
+  background: white;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+
+.left {
+  width: 35%;
+  background: #16213D;
+  color: white;
+  padding: 40px 25px;
+}
+
+.profile-header h1 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.profile-header span {
+  color: #38bdf8;
+}
+
+.job {
+  margin-top: 8px;
+  font-weight: 300;
+  color: #cbd5e1;
+}
+
+.left h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #38bdf8;
+}
+
+.left p, .left li {
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.left ul {
+  list-style: none;
+}
+
+
+.right {
+  width: 65%;
+  padding: 45px;
+}
+
+.right h2 {
+  font-size: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.right h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  background: #38bdf8;
+}
+
+.right p {
+  font-size: 14px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.experience {
+  margin-bottom: 20px;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exp-header span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.exp-header h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.skill i.fa-html5 { color: #e34c26; }
+.skill i.fa-css3-alt { color: #264de4; }
+.skill i.fa-js-square { color: #f0db4f; }
+.skill i.fa-databases { color: #e0afff; }
+.skill i.fa-php { color: #787CB5; }
+.skill i.fa-robot { color: #7289da; }
